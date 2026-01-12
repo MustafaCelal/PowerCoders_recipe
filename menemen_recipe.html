@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menemen - Turkish Scrambled Eggs Recipe</title>
+    <link rel="stylesheet" href="menemen_styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Menemen</h1>
+            <p class="subtitle">Traditional Turkish Scrambled Eggs</p>
+            <button id="whatsapp-share" class="whatsapp-btn">
+                📱 Share on WhatsApp
+            </button>
+        </header>
+
+        <img src="https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg" alt="Delicious Menemen in a pan" class="hero-image">
+
+        <div class="content">
+            <div class="intro">
+                Menemen is a beloved Turkish breakfast dish featuring eggs gently scrambled with tomatoes, peppers, and aromatic spices. This comforting one-pan meal is perfect for lazy weekend mornings and captures the essence of Turkish home cooking.
+            </div>
+
+            <div class="recipe-info">
+                <div class="info-box">
+                    <strong>Prep Time</strong>
+                    <span>10 minutes</span>
+                </div>
+                <div class="info-box">
+                    <strong>Cook Time</strong>
+                    <span>15 minutes</span>
+                </div>
+                <div class="info-box">
+                    <strong>Servings</strong>
+                    <span>2-3 people</span>
+                </div>
+                <div class="info-box">
+                    <strong>Difficulty</strong>
+                    <span>Easy</span>
+                </div>
+            </div>
+
+            <h2>Ingredients</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>4 large eggs</li>
+                    <li>2 medium tomatoes, diced</li>
+                    <li>2 green peppers (or 1 bell pepper), chopped</li>
+                    <li>1 small onion, finely chopped</li>
+                    <li>3 tablespoons olive oil or butter</li>
+                    <li>1 teaspoon red pepper flakes (optional)</li>
+                    <li>Salt and black pepper to taste</li>
+                    <li>Fresh parsley for garnish</li>
+                    <li>Crumbled feta cheese (optional)</li>
+                </ul>
+            </div>
+
+            <h2>Instructions</h2>
+            <div class="instructions">
+                <ol>
+                    <li>Heat olive oil or butter in a large skillet over medium heat. Add the chopped onions and sauté until softened, about 3-4 minutes.</li>
+                    <li>Add the chopped peppers to the pan and cook for another 3-4 minutes until they begin to soften.</li>
+                    <li>Add the diced tomatoes and cook for 5-7 minutes, stirring occasionally, until they break down and release their juices. Season with salt, black pepper, and red pepper flakes if using.</li>
+                    <li>Crack the eggs directly into the pan over the tomato mixture. Gently stir to scramble the eggs, mixing them with the vegetables. Cook until the eggs are just set but still creamy, about 2-3 minutes.</li>
+                    <li>Remove from heat immediately to prevent overcooking. Garnish with fresh parsley and crumbled feta cheese if desired.</li>
+                    <li>Serve hot with crusty bread, olives, and Turkish tea for an authentic breakfast experience.</li>
+                </ol>
+            </div>
+
+            <div class="tips">
+                <h3>💡 Chef's Tips</h3>
+                <ul>
+                    <li>Don't overcook the eggs - they should remain soft and creamy</li>
+                    <li>Use ripe, juicy tomatoes for the best flavor</li>
+                    <li>Some prefer to break the egg yolks less for a runnier texture</li>
+                    <li>Serve with fresh Turkish bread (pide) to scoop up every bite</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Enjoy your homemade Menemen! Afiyet olsun! (Bon appétit in Turkish)</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('whatsapp-share').addEventListener('click', function() {
+            // Create the message text
+            const recipeTitle = 'Menemen - Turkish Scrambled Eggs';
+            const recipeDescription = 'Check out this delicious Turkish breakfast recipe!';
+            const pageUrl = window.location.href;
+            
+            // Combine the message
+            const message = `${recipeTitle}\n\n${recipeDescription}\n\n${pageUrl}`;
+            
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Create WhatsApp share URL
+            const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+            
+            // Open WhatsApp in a new window
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
